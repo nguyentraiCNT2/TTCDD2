@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chính - Hệ Thống CSKH</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .main-container {
+            padding: 2rem;
+        }
+        .nav-item {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Hệ Thống CSKH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#dashboard">Trang Chính</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#profile">Thông Tin Cá Nhân</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#support-requests">Yêu Cầu Hỗ Trợ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#feedback">Phản Hồi và Khiếu Nại</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#survey">Khảo Sát</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Đăng Xuất</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container main-container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#profile" class="list-group-item list-group-item-action">Thông Tin Cá Nhân</a>
+                    <a href="#support-requests" class="list-group-item list-group-item-action">Yêu Cầu Hỗ Trợ</a>
+                    <a href="#feedback" class="list-group-item list-group-item-action">Phản Hồi và Khiếu Nại</a>
+                    <a href="#survey" class="list-group-item list-group-item-action">Khảo Sát</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id="dashboard">
+                    <h2>Trang Chính</h2>
+                    <p>Chào mừng, [Tên Người Dùng]!</p>
+                    <!-- Nội dung chính sẽ được tải ở đây tùy theo vai trò -->
+                </div>
+                
+                <div id="profile" class="mt-5">
+                    <h2>Thông Tin Cá Nhân</h2>
+                    <p>Tên: [Tên]</p>
+                    <p>Email: [Email]</p>
+                    <p>Số Điện Thoại: [Số Điện Thoại]</p>
+                    <p>Địa Chỉ: [Địa Chỉ]</p>
+                    <button class="btn btn-primary">Cập Nhật Thông Tin</button>
+                </div>
+                
+                <div id="support-requests" class="mt-5">
+                    <h2>Yêu Cầu Hỗ Trợ</h2>
+                    <button class="btn btn-success">Tạo Yêu Cầu Mới</button>
+                    <table class="table mt-3">
+                        <thead>
+                            <tr>
+                                <th>Tiêu Đề</th>
+                                <th>Trạng Thái</th>
+                                <th>Ngày Tạo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Yêu cầu hỗ trợ 1</td>
+                                <td>Đang xử lý</td>
+                                <td>2024-09-11</td>
+                            </tr>
+                            <!-- Các yêu cầu hỗ trợ khác sẽ được liệt kê ở đây -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="feedback" class="mt-5">
+                    <h2>Phản Hồi và Khiếu Nại</h2>
+                    <button class="btn btn-warning">Gửi Phản Hồi/Khiếu Nại Mới</button>
+                    <table class="table mt-3">
+                        <thead>
+                            <tr>
+                                <th>Tiêu Đề</th>
+                                <th>Trạng Thái</th>
+                                <th>Ngày Gửi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Phản hồi 1</td>
+                                <td>Đã giải quyết</td>
+                                <td>2024-09-10</td>
+                            </tr>
+                            <!-- Các phản hồi và khiếu nại khác sẽ được liệt kê ở đây -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="survey" class="mt-5">
+                    <h2>Khảo Sát</h2>
+                    <button class="btn btn-info">Hoàn Thành Khảo Sát</button>
+                    <table class="table mt-3">
+                        <thead>
+                            <tr>
+                                <th>Tiêu Đề</th>
+                                <th>Trạng Thái</th>
+                                <th>Ngày Hoàn Thành</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Khảo sát 1</td>
+                                <td>Đã hoàn thành</td>
+                                <td>2024-09-09</td>
+                            </tr>
+                            <!-- Các khảo sát khác sẽ được liệt kê ở đây -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

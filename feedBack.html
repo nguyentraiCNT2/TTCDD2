@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chi Tiết Phản Hồi/Khiếu Nại - Hệ Thống CSKH</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .main-container {
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Hệ Thống CSKH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#dashboard">Trang Chính</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#profile">Thông Tin Cá Nhân</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#support-requests">Yêu Cầu Hỗ Trợ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#feedback">Phản Hồi và Khiếu Nại</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#survey">Khảo Sát</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Đăng Xuất</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Chi Tiết Phản Hồi/Khiếu Nại</h2>
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Phản Hồi/Khiếu Nại #67890</h4>
+                        <p><strong>Ngày Gửi:</strong> 2024-09-11</p>
+                    </div>
+                    <div class="card-body">
+                        <h5>Thông Tin Phản Hồi/Khiếu Nại</h5>
+                        <p><strong>Tiêu Đề:</strong> Chất lượng dịch vụ không đạt yêu cầu</p>
+                        <p><strong>Mô Tả:</strong> Tôi không hài lòng với chất lượng dịch vụ được cung cấp. Mong được hỗ trợ giải quyết vấn đề này.</p>
+                        <p><strong>Trạng Thái:</strong> Đã giải quyết</p>
+                        <p><strong>Nhân Viên Xử Lý:</strong> Trần Thị B</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Cập Nhật Trạng Thái</h5>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="status">Chọn Trạng Thái:</label>
+                                <select class="form-control" id="status" name="status">
+                                    <option value="pending">Chưa giải quyết</option>
+                                    <option value="resolved">Đã giải quyết</option>
+                                    <option value="closed">Đã đóng</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="comments">Ghi Chú (Tùy chọn):</label>
+                                <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

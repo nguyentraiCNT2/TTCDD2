@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập/Đăng Ký - Hệ Thống CSKH</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            max-width: 500px;
+            width: 100%;
+        }
+        .form-container {
+            padding: 2rem;
+        }
+        .form-container .nav-link {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body form-container">
+            <ul class="nav nav-tabs" id="loginRegisterTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Đăng Ký</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-3">
+                <!-- Đăng Nhập -->
+                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                    <h3 class="card-title">Đăng Nhập</h3>
+                    <form action="/login" method="post">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" class="form-control" id="login-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Mật Khẩu</label>
+                            <input type="password" class="form-control" id="login-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                        <p class="mt-2">Chưa có tài khoản? <a href="#register" data-toggle="tab">Đăng Ký ngay</a></p>
+                    </form>
+                </div>
+                <!-- Đăng Ký -->
+                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                    <h3 class="card-title">Đăng Ký</h3>
+                    <form action="/register" method="post">
+                        <div class="form-group">
+                            <label for="register-name">Tên</label>
+                            <input type="text" class="form-control" id="register-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input type="email" class="form-control" id="register-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Mật Khẩu</label>
+                            <input type="password" class="form-control" id="register-password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-phone">Số Điện Thoại</label>
+                            <input type="tel" class="form-control" id="register-phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-address">Địa Chỉ</label>
+                            <input type="text" class="form-control" id="register-address" name="address" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Đăng Ký</button>
+                        <p class="mt-2">Đã có tài khoản? <a href="#login" data-toggle="tab">Đăng Nhập ngay</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
